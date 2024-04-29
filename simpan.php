@@ -5,7 +5,7 @@ $konek = mysqli_connect("localhost", "root", "", "kontak") or die("Koneksi Gagal
 if(isset($_POST["submit"])) {
   if(empty($_POST["nama"]) || empty($_POST["email"]) || empty($_POST["subject"]) || empty($_POST["pesan"])) {
     echo "<script>
-            alert('Gagal, tidak boleh ada kolom yang kosong');
+            alert('Gagal, tidak boleh ada yang kosong');
             window.location.href = 'index.php';
           </script>";
     exit; 
